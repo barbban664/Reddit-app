@@ -1,0 +1,42 @@
+.all{
+    background-color: #303030;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+.name1, .link1{
+    width: 500px;
+    height: 50px;
+    background-color: HoneyDew;
+    font-size: 20px;
+}
+.text{
+    font-size: 24px;
+}
+.button{
+    background-color: #008CBA;
+    border: none;
+    font-size: 20px;
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.button1, .button2{
+    background-color: #008CBA;
+    color: #ffffff;
+    border: none;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.list1, .list2, .list3{
+    display: inline-block;
+    height: 200px;
+    font-size: 20px;
+    list-style-position: outside;
+    width:33%;
+    }
+
+

@@ -1,0 +1,43 @@
+<div [ngClass]="'all'">
+
+    <label [ngClass]="'text'">Nazwa &#160;</label>
+    <input [ngClass]="'name1'" [(ngModel)]="name">
+    <br><br><br>
+
+    <label [ngClass]="'text'">Link &#160;&#160;&#160;&#160;&#160;</label>
+    <input [ngClass]="'link1'" [(ngModel)]="link">
+    <br><br><br>
+
+    <button [ngClass]="'button'" (click)="add()">Dodaj</button>
+    <br><br><br>
+    <div class="list1">
+        <ul>
+            <label [ngClass]="'text'">Nazwa &#160;&#160;</label>
+            <br><br><br>
+            <li *ngFor="let name of namesList">
+                {{name}}
+            </li>
+        </ul>
+    </div>
+    <div class="list2">
+        <ul>
+            <label [ngClass]="'text'">Link &#160;</label>
+            <br><br><br>
+            <li *ngFor="let link of linksList">
+                <a href="{{link}}" target="_blank" title="Sprawdź">{{link}}</a>
+            </li>
+        </ul>
+    </div>
+    <div class="list3">
+        <ul>
+            <label [ngClass]="'text'">Ocena &#160;</label>
+            <br><br><br>
+
+            <li *ngFor= "let rate of rateList">
+                <button [ngClass]="'button1'" (click)="plus(rate)">+</button> &#160;
+                <button [ngClass]="'button2'" (click)="minus(rate)">-</button> &#160;
+                {{rate.number}}
+            </li>
+        </ul>
+    </div>
+</div>
